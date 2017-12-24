@@ -1,0 +1,4 @@
+#!ruby
+
+require 'emojilist'
+exit Emojilist.run(ARGV)
