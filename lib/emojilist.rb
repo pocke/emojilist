@@ -7,7 +7,6 @@ module Emojilist
   class << self
     def run(argv)
       opt = ARGV.getopts('', 'ligature')
-      p opt
       emoji.each do |e|
         next if !opt['ligature'] && e[:char].size != 1
         puts "#{e[:char]} #{e[:names].join(' ')} #{e[:keywords].join(' ')}"
